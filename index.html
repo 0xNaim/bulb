@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <!-- bulb on button -->
+    <button id="on">Bulb On</button>
+
+    <!-- bulb img -->
+    <img id="bulb" src="img/pic_bulboff.gif" alt="bulb"/>
+
+    <!-- bulb off button -->
+    <button id="off">Bulb Off</button>
+
+    <script>
+        var blbOn = document.getElementById('on'); // for bulb on select
+        var blbOff = document.getElementById('off'); // for bulb off select
+
+        // onclick event
+        blbOn.addEventListener('click', function(){
+            document.getElementById('bulb').src='img/pic_bulbon.gif';
+        })
+
+        // onclick event
+        blbOff.addEventListener('click', function(){
+            document.getElementById('bulb').src='img/pic_bulboff.gif';
+        })
+    </script>
+</body>
+</html>
